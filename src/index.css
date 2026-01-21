@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities */
+@layer utilities {
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-2xl border border-white/10;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8),
+      inset 0 0 1px 1px rgba(255,255,255,0.05);
+      
+  }
+
+  .glow-card:hover {
+    @apply border-primary/40;
+    box-shadow: 0 0 40px rgba(242, 185, 13, 0.15);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 30px rgba(242, 185, 13, 0.6);
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    color: transparent;
+  }
+
+  .title-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #f2b90d 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fluid-blur {
+    filter: blur(80px);
+    opacity: 0.4;
+  }
+}
