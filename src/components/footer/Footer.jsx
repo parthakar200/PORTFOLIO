@@ -9,7 +9,7 @@ export function Footer(){
                         <div
                             className="w-12 h-12 bg-white flex items-center justify-center rounded-full overflow-hidden border border-white/10">
                             <div className="w-full h-full bg-cover bg-center"
-                                style={{backgroundImage:'url("../../../public/image/myPhoto.jpeg")'}}>
+                                style={{backgroundImage:'url("/image/myPhoto.jpeg")'}}>
                             </div>
                         </div>
                         <div>
