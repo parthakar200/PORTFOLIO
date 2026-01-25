@@ -12,13 +12,14 @@ export function Hero({stackRef,projectRef, homeRef}){
                         className="font-display text-[10px] md:text-xs tracking-[0.8em] uppercase text-primary mb-8 block text-glow">Engineering
                         Excellence</span>
                     <h1
-                        className="font-display text-[12vw] md:text-[11vw] leading-[0.95] font-bold tracking-tighter uppercase mb-2">
-                        THE <span className="italic  font-serif font-bold text-outline">S.K.</span>
+                        className="font-display text-[12vw] md:text-[11vw] leading-[0.95] font-bold tracking-tighter mb-2">
+                        <span className="italic font-serif font-bold text-outline">S.K.</span>
                     </h1>
                     <h1
                         className="font-display text-[9vw] md:text-[8vw] leading-[0.95] font-bold tracking-wider  uppercase mb-12 title-gradient">
                         PARTHASARATHI
                     </h1>
+                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl items-center mt-8">
                         <p
                             className="text-white/50 text-lg md:text-xl font-light leading-relaxed text-left border-l border-primary/30 pl-8">

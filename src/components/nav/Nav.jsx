@@ -9,8 +9,8 @@ export function NavBar({homeRef,stackRef,projectRef,resumeRef,contactRef}) {
   return (
     // mix-blend-difference
     <header className="flex items-center justify-between px-6 md:px-12 py-5 fixed w-full z-50">
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-[1px] bg-primary"></div>
+      <div className="flex items-center gap-3 ">
+        <div className="w-10 h-[1px] bg-primary "></div>
         <h2 
            onClick={()=>
             homeRef.current.scrollIntoView({ behavior: "smooth" })
