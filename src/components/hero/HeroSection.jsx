@@ -1,12 +1,12 @@
 
 
 
-export function Hero({stackRef}){
+export function Hero({stackRef,projectRef, homeRef}){
 
     
 
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20">
+        <section ref={homeRef} className="min-h-screen flex flex-col items-center justify-center px-6 pt-20">
                 <div className="flex flex-col items-center text-center">
                     <span
                         className="font-display text-[10px] md:text-xs tracking-[0.8em] uppercase text-primary mb-8 block text-glow">Engineering
@@ -22,12 +22,15 @@ export function Hero({stackRef}){
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl items-center mt-8">
                         <p
                             className="text-white/50 text-lg md:text-xl font-light leading-relaxed text-left border-l border-primary/30 pl-8">
-                            Java Full Stack Developer specialized in <span
-                                className="text-white font-medium italic serif">high-frequency architecture</span> and
-                            modern cinematic digital interfaces.
+                            Java Full Stack Developer hands-on <br /> <span
+                                className="text-white font-medium italic serif">experience in SpringBoot and React,<br /> </span> focused on clean architecture and modern UI.
                         </p>
                         <div className="flex flex-wrap gap-4 justify-center md:justify-end">
                             <button
+                            onClick={()=>
+                                projectRef.current.scrollIntoView({behavior: "smooth"})
+
+                            }
                                 className="bg-primary text-black font-display text-[10px] px-8 py-5 tracking-[0.3em] uppercase hover:invert transition-all duration-500">
                                 View Works
                             </button>

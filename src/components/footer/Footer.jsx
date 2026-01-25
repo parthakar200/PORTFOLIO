@@ -1,8 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export function Footer(){
 
     return (
-        <footer className="bg-background-dark py-20 px-6 border-t border-white/5 relative overflow-hidden">
+        <footer className="bg-background-dark py-20 px-6 border-t border-white/5 relative overflow-hidden ">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-16">
                 <div className="flex flex-col items-center md:items-start gap-6">
                     <div className="flex items-center gap-4">
@@ -23,13 +25,14 @@ export function Footer(){
                 <div className="flex flex-col items-center md:items-end gap-6">
                     <nav className="flex gap-12">
                         <a className="font-display text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-primary transition-colors"
-                            href="#">Resume</a>
-                        <a className="font-display text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-primary transition-colors"
-                            href="#">Manifesto</a>
-                        <a className="font-display text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-primary transition-colors"
-                            href="#">Contact</a>
+                            href="/ParthaResume.pdf" download><FontAwesomeIcon icon={faDownload} />Resume</a>
+                        {/* <a className="font-display text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-primary transition-colors"
+                            href="#">Manifesto</a> */}
+                        <span className="font-display text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-primary transition-colors"
+                            href=""><FontAwesomeIcon icon={faPhone} /> 7853014918</span>
                     </nav>
-                    <p className="text-white/20 text-[9px] uppercase tracking-[0.5em]">© 2026 Design. Code. Impact.</p>
+                      
+                    <p className="text-white/20 text-[9px] uppercase tracking-[0.5em]">© 2026 Design & Code By Partha.</p>
                 </div>
             </div>
             <div

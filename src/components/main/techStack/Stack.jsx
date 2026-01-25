@@ -1,59 +1,67 @@
 import { useState } from "react";
 import { StackCard } from "./StackCard";
 import { SocialMedia } from "../../socialMedia/Social";
+import { faReact,faJava, faHtml5, faCss, faJs, faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import { faBiohazard, faDatabase, faLeaf } from "@fortawesome/free-solid-svg-icons";
+
 
 export function Stack({stackRef}) {
-const [stackDetail, setStackDetail] = useState([
+const [stackDetail] = useState([
                                                 {
                                                     tech:"SPRING BOOT",
-                                                    subtech:"microservices core",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary"><path strokeLinecap="round" strokeLinejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>)
+                                                    subtech:"Backend REST APIs",
+                                                    logo:faLeaf
+                                                },
+                                                {
+                                                    tech:"CORE JAVA",
+                                                    subtech:"OOP Fundamentals",
+                                                    logo:faJava
                                                 },
                                                 {
                                                     tech:"SQL/PLSQL",
-                                                    subtech:"relational design",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary"><path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg>)
+                                                    subtech:"Relational Databases",
+                                                    logo:faDatabase
                                                 },
                                                 {
                                                     tech:"REACT",
-                                                    subtech:"reactive ux/ui",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary" ><path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" /></svg>)
+                                                    subtech:"Modern UI Development",
+                                                    logo:faReact
                                                 },
                                                 {
-                                                    tech:"HTML",
-                                                    subtech:"global ops",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary" ><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>)
+                                                    tech:"HTML5",
+                                                    subtech:"Semantic Markup",
+                                                    logo:faHtml5
                                                 },
                                                 {
-                                                    tech:"CSS",
-                                                    subtech:"reactive ux/ui",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary" ><path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" /></svg>)
+                                                    tech:"CSS3",
+                                                    subtech:"Responsive Styling",
+                                                    logo:faCss
                                                 },
                                                 {
-                                                    tech:"JAVASCRIPT",
-                                                    subtech:"global ops",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary" ><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>)
+                                                    tech:"JAVASCRIPT(ES6)",
+                                                    subtech:"Client Side Logic",
+                                                    logo:faJs
                                                 },
                                                 {
                                                     tech:"TAILWIND CSS",
-                                                    subtech:"global ops",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary" ><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>)
+                                                    subtech:"Utility First Styling",
+                                                    logo:faBiohazard
                                                 },
                                                 {
                                                     tech:"BOOTSTRAP",
-                                                    subtech:"global ops",
-                                                    logo:(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-primary" ><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>)
+                                                    subtech:"Responsive Components",
+                                                    logo:faBootstrap
                                                 }
                                             ]);
 
   return (
     <section ref={stackRef} className="py-32 px-6 md:px-20 bg-[#080808] relative">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-20 text-center md:text-left">
-          <h2 className="font-display text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase mb-4">
-            Modern <span className="text-outline">Stack</span>
+        <div className="mb-20 text-start md:text-left max-w-xl ">
+          <h2 className="font-display text-6xl md:text-8xl font-bold text-white tracking-tighter uppercase  mb-4">
+            Modern <span className="text-outline text-primary italic font-serif">Stack</span>
           </h2>
-          <div className="h-1 w-20 bg-primary mx-auto md:mx-0"></div>
+          <div className="h-1 w-20 bg-primary  md:mx-0"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {
