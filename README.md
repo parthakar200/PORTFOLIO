@@ -14,7 +14,7 @@ I enjoy learning new technologies and improving my coding skills every day.
 ---
 
 ## 🌐 Live Demo  
-(If deployed, add link here)
+https://parthaportfolio-jade.vercel.app/
 
 ---
 
