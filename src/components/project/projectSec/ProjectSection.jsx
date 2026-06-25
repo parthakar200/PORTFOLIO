@@ -4,10 +4,21 @@ import RightCard from "../projectCard/RightCard";
 
 const ProjectSection = ({projectRef}) => {
 
-    const [cardDetail] = useState([
+    const [cardDetail] = useState([                 {
+                                                        image:"https://thumbs.dreamstime.com/b/business-meeting-tax-planning-financial-strategies-visualized-digital-icons-graphics-office-environment-453991598.jpg",
+                                                        projectnum:"01",
+                                                        firstname:"TAX CONSULTANCY",
+                                                        lastname:"SERVICE",
+                                                        link:"https://www.jeebanco.in/",
+                                                        tech:"CLIENT & TAX MANAGEMENT SYSTEM",
+                                                        about:"A comprehensive tax consultancy platform that enables employees to manage client records, track work progress, handle tax-related documents, and monitor task assignments efficiently through a secure and user-friendly dashboard.",
+                                                        stack:['MONGO-DB','REACT','NODE-JS','EXPRESS-JS'],
+                                                        icon:(<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6"><path fillRule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clipRule="evenodd" /></svg>
+                                                        )
+                                                    },
                                                     {
                                                         image:"https://indiatravel.com/wp-content/uploads/2024/03/Places-to-visit-in-Odisha.jpg",
-                                                        projectnum:"01",
+                                                        projectnum:"02",
                                                         firstname:"EXPLORE",
                                                         lastname:"ODISHA",
                                                         link:"https://history-of-odisha.vercel.app/",
@@ -19,7 +30,7 @@ const ProjectSection = ({projectRef}) => {
                                                     },
                                                     {
                                                         image:"https://mir-s3-cdn-cf.behance.net/projects/404/c6017c230687699.Y3JvcCwxNzI1LDEzNTAsMzgsMA.jpg",
-                                                        projectnum:"02",
+                                                        projectnum:"03",
                                                         firstname:"DHOOM",
                                                         lastname:"MUSIC",
                                                         link:"https://shoftishy.vercel.app/",
@@ -34,7 +45,7 @@ const ProjectSection = ({projectRef}) => {
                                                     },
                                                     {
                                                         image:"https://tdwi.org/articles/2020/12/08/-/media/TDWI/TDWI/BITW/AI17.jpg",
-                                                        projectnum:"03",
+                                                        projectnum:"04",
                                                         firstname:"JAVA DATABASE",
                                                         lastname:"EXPLORER",
                                                         link:"https://github.com/parthakar200/JAVA-SQL",
